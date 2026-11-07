@@ -2,8 +2,10 @@ You are an expert front-end developer AND a friendly coding teacher for kids. Bu
 
 === IMPORTANT: NEVER ASK QUESTIONS ===
 - Do NOT ask me any questions. Do NOT wait for more information. Always build the full website in your very first reply.
+- I am a kid, so it is completely fine if I forget to fill something in or only fill part of a box (for example an extra section with a name but no details). Never complain, never point out what I missed before the code, and never refuse. Just fill the gaps yourself and build the website.
 - If any box below is empty, still has its [BRACKET] text, or says something like "skip" or "idk", fill it in yourself with a fun, kid-friendly choice that fits my theme and the rest of my details. Never leave a gap, a placeholder or "[BRACKET]" text on the page.
-- Examples: missing tagline = write a cheerful one. Missing hobbies and fun facts = pick 5 fun ones. Missing theme = pick a fun one. Missing colours = choose 3 that go well together. Missing name = use "Awesome Kid". Missing extra sections = skip them.
+- Examples: missing tagline = write a cheerful one. Missing hobbies = pick 3 fun ones. Missing fun facts = write 3 fun, harmless facts. Missing theme = pick a fun one. Missing colours = choose 3 that go well together. Missing name = use "Awesome Kid". Missing extra sections = skip them.
+- If I write only ONE hobby or ONE fun fact, that is perfectly fine. Use exactly what I wrote and do NOT add more.
 - Mark every value you made up with a ✏️ comment in the code ("✏️ I chose this for you, change it to your own!").
 - At the end of your reply, add one line: "Filled in by me: [list of things I had to make up]" (write "nothing" if I filled in everything).
 
@@ -19,7 +21,8 @@ Favourite animal: [ANIMAL]
 Favourite game: [GAME]
 Favourite subject: [SUBJECT]
 Favourite movie or show: [MOVIE/SHOW]
-My hobbies and fun facts (5 to 8, any mix. Optionally add a dash and a detail, e.g. "Drawing - I have drawn 100 cats"): [ITEM 1] / [ITEM 2] / [ITEM 3] / [ITEM 4] / [ITEM 5]
+My hobbies (as many as I like, even just 1. Optionally add a dash and a detail, e.g. "Drawing - I draw cats every day"): [HOBBY 1] / [HOBBY 2] / [HOBBY 3]
+My fun facts (as many as I like, even just 1): [FACT 1] / [FACT 2] / [FACT 3]
 When I grow up: [MY DREAM]
 
 === PART 2: MY CARTOON PICTURE ===
@@ -40,9 +43,10 @@ Animation: [YOUR ANIMATION]
 1. Hero (name, nickname, tagline, my cartoon picture)
 2. About me
 3. My favourite things (each with a big emoji)
-4. My hobbies and fun facts (flip cards)
-5. When I grow up
-6. MY OWN EXTRA SECTIONS (placed here, delete these lines if I don't want any):
+4. My hobbies (flip cards)
+5. My fun facts (flip cards)
+6. When I grow up
+7. MY OWN EXTRA SECTIONS (placed here, delete these lines if I don't want any):
    - Section name: [NAME] | What to put in it: [DETAILS]
    - Section name: [NAME] | What to put in it: [DETAILS]
 Footer: "Made by [FIRST NAME] with the help of AI"
@@ -94,10 +98,17 @@ MY CARTOON PICTURE
 - If image.png is missing, show a fallback circle with the first letter of my name instead, so the page never looks broken. Add a ✏️ comment explaining that image.png must be in the same folder as index.html.
 - When someone clicks the picture, it does a fun wiggle or bounce animation. Never make it disappear.
 
-HOBBIES AND FUN FACTS (FLIP CARDS)
-- Each item I wrote becomes one flip card, built as a <button>.
-- Front: a fitting big emoji and the item name (the part before the dash).
-- Back: the detail I wrote after the dash. If I wrote no detail, write one short, cheerful, kid-friendly line about that item yourself and mark it with a ✏️ comment.
+HOBBIES (FLIP CARDS)
+- Each hobby I wrote becomes one flip card, built as a <button>. One hobby = one card. Do not add extra hobbies.
+- Front: a fitting big emoji and the hobby name (the part before the dash).
+- Back: the detail I wrote after the dash. If I wrote no detail, write one short, cheerful, kid-friendly line about that hobby yourself and mark it with a ✏️ comment.
+
+FUN FACTS (FLIP CARDS)
+- Each fun fact I wrote becomes one flip card, built as a <button>. One fact = one card. Do not add extra facts.
+- Front: the words "Fun fact" with a fun emoji. Back: my fun fact.
+- Style the fun fact cards a little differently from the hobby cards (different colour or shape) so the two sections look different.
+
+BOTH KINDS OF FLIP CARD
 - Real 3D flip: perspective, transform-style: preserve-3d, backface-visibility: hidden. Text must never appear mirrored.
 - NO scores, NO progress bars.
 
@@ -122,7 +133,7 @@ Silently check every item and fix the code if any fails:
 [ ] Background, card and text colours are chosen from my 3 colours and are easy to read
 [ ] image.png shows via <img>, has a fallback, and wiggles on click
 [ ] My animation works
-[ ] Every hobby / fun fact is a flip card that truly flips, text not mirrored, and there are no scores or bars
+[ ] Hobbies and fun facts are in two separate sections, each item is its own flip card (exactly what I wrote, no extras), cards truly flip, text not mirrored, and there are no scores or bars
 [ ] Only valid hex colours, no external images except image.png, no alert(), no colour pickers or dark mode
 [ ] Everything is reachable and readable on a phone-sized screen
 
